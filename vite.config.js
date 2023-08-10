@@ -1,11 +1,8 @@
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/APP2/', // Remplacez par le nom de votre dépôt GitHub
-  plugins: [
-    vue(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+  plugins: [vue()],
+  base: "/APP2"
 })
